@@ -1,3 +1,6 @@
+#contact,#profession{
+    display: none;
+}
 html {
     overflow-x: hidden;
 }
@@ -246,7 +249,7 @@ img.icon {
 .role2:hover {
     background-color: dodgerblue;
 }
-#contact{
+#contactBtn{
     position: relative;
     text-align: center;
 }

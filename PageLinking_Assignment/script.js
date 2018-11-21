@@ -1,22 +1,22 @@
 
-var profession = document.querySelector('#profession');
-var section = document.querySelector('#section');
-var contact = document.querySelector('#contact');
-
 function toChangePath(e) {
-    e.preventDefault();
-    if (profession) {
-        [section,contact].style.display='none';
-        history.pushState(null,null, "rolePage.html");
 
-    }
-    else if (contact) {
-        [profession,section].style.display='none';
-        history.pushState(null, null, "contactPage.html");
-
-    } else if (section) {
-        [profession,contact].style.display='none';
-        history.pushState(null,null, "index.html");
-
-    }
+    var profession = document.getElementById('profession');
+    var section = document.getElementById('section');
+    var contact = document.getElementById('contact');
+    
+if(e.target.getAttribute('class') === "role1"){
+    profession.style.display='block';
+    section.style.display='none';
+    contact.style.display='none';
+}else if(e.target.getAttribute('class') === "contact"){
+    profession.style.display='none';
+    section.style.display='none';
+    contact.style.display='block';
+}else if(e.target.getAttribute('class') === "section"){
+    profession.style.display='none';
+    section.style.display='block';
+    contact.style.display='none';
+}
+ 
 }
