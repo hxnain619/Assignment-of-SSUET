@@ -3,17 +3,20 @@ var profession = document.querySelector('#profession');
 var section = document.querySelector('#section');
 var contact = document.querySelector('#contact');
 
-function toChangePath() {
+function toChangePath(e) {
+    e.preventDefault();
     if (profession) {
-        history.pushState("", "Role Page", "rolePage.html");
+        [section,contact].style.display='none';
+        history.pushState(null,null, "rolePage.html");
 
     }
-    else if (section) {
-
-        history.pushState("", "Contact Page", "contactPage.html");
+    else if (contact) {
+        [profession,section].style.display='none';
+        history.pushState(null, null, "contactPage.html");
 
     } else if (section) {
-        history.pushState("", "HomePage", "index.html");
+        [profession,contact].style.display='none';
+        history.pushState(null,null, "index.html");
 
     }
 }
