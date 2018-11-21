@@ -1,0 +1,356 @@
+/* font on the banner */
+
+@font-face {
+    font-family: "Teko";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Teko Bold"), local("Teko-Bold"), url("https://fonts.gstatic.com/s/teko/v7/vZNHrtAXYeQN4tfAPqsxxw.woff2") format("woff2");
+    unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+html {
+    overflow-x: hidden;
+}
+body,#body {
+    height: auto;
+    width: 100%;
+}
+
+                    /* Header  */
+
+ /* background on banner on top */
+.bg {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    right: 0px;
+    top: 0px;
+    z-index: -101;
+    width: auto;
+    height: 775px;
+}
+ 
+/* foreground of banner with image on it */
+.fg {
+    height: 775px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: -99;
+    opacity: 0.6;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+}
+/* video om background */
+#video {
+    right: 0px;
+    width: 100%;
+    bottom: 0;
+    z-index: -100;
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/* nav bar on top */
+
+#nav {
+    display: inherit;
+    animation: fadein 2s linear 1;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* button on nav bar */
+
+button.role1 {
+    font-family: sans-serif;
+    position: relative;
+    right: 20px;
+    top: 1em;
+    line-height: 20px;
+    width: 140px;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    float: right;
+    background: red;
+    color: white;
+}
+
+.role1:focus,
+.role1:active,
+.role1:hover {
+    background-color: firebrick;
+    border-radius: 20px;
+    -webkit-transition:background 0.3s ease-in-out;
+    -moz-transition:background 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
+}
+
+/* texts on banner */
+
+.head-para {
+    color: white;
+    text-align: center;
+    transform: rotateZ(-4deg);
+}
+
+span {
+    font-family: "teko";
+
+    color: white;
+    position: relative;
+    left: 10px;
+}
+
+.first {
+    font-style: italic;
+    font-size: 270px;
+    top: -50px;
+    position: relative;
+    z-index: 1;
+    text-shadow: -6px 0px 18px black;
+}
+
+.second {
+    font-style: italic;
+    font-size: 270px;
+    position: relative;
+    z-index: -1;
+    top: -285px;
+    text-shadow: -6px 0px 25px black;
+    z-index: 1;
+   }
+
+.third {
+    font-style: italic;
+    font-family: sans-serif;
+    text-shadow: -6px 0px 25px black;
+    top: -400px;
+    position: relative;
+    font-weight: 0;
+    font-size: 24px;
+}
+
+/* button that is continously moving */
+#rotate {
+    position: absolute;
+    width: 4%;
+    height: 30px;
+    bottom: 30%;
+    right: 700px;
+    color: white;
+    border: 3px solid white;
+    border-radius: 50px;
+    background: transparent;
+    transform: rotate(93deg);
+}
+
+/* the oval shaped inside a capsule like button */
+img.icon {
+    padding-top: 18px;
+    filter: drop-shadow(1px 1px 10px white);
+    animation: transform 1s linear 2s infinite, opacity 1s linear 2s infinite;
+    transform: rotate(90deg) translateX(-7.5px);
+    margin-left: -19px;
+    filter: drop-shadow(0px 0px 5px 5px white);
+}
+
+@keyframes transform {
+    from {
+        margin-left: -20px;
+    }
+    to {
+        margin-left: 30px;
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+                    /* Section */
+
+/* Section Page's Contents */
+
+#section {
+    margin-top: -3em;
+}
+.sec-bg {
+    position: absolute;
+    z-index: -105;
+    height: 100em;
+    top: -10px;
+    min-height: 100%;
+    min-width: 100%;
+    width: 20%;
+}
+
+.sec-para {
+    font-family: sans-serif;
+    font-style: bold;
+    font-size: 20px;
+    font-weight: normal;
+    color: #334455;
+    padding-left: 10px;
+    height: auto;
+    width: 90%;
+    line-height: 35px;
+}
+
+.sec-heading {
+
+    text-align: left;
+    line-height: .8em;
+    font-size: 85px;
+    font-style: italic;
+    font-family: "teko";
+    color: #334455;
+}
+
+/* video image aside with para */
+#sec-video {
+    margin: 2%;
+}
+
+/* role button  right after the section's para */
+
+.role2 {
+    float: right;
+    line-height: 30px;
+    width: 12%;
+    font-size: 17px;
+    padding: 12px;
+    border: none;
+    float: right;
+    background: red;
+    color: white;
+}
+
+.role2:focus,
+.role2:active,
+.role2:hover {
+    background-color: dodgerblue;
+    -webkit-transition:background 0.3s ease-in-out;
+    -moz-transition:background 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
+}
+#contact{
+    position: relative;
+    text-align: center;
+}
+.contact {
+    margin: 1em;
+    line-height: 20px;
+    width: 180px;
+    font-size: 17px;
+    padding: 14px;
+    border: none;
+    background: red;
+    color: white;
+}
+.contact:hover {
+    background-color: dodgerblue;
+    -webkit-transition:background 0.3s ease-in-out;
+    -moz-transition:background 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
+}
+#pro-p2 {
+    text-align: center;
+    font-family: sans-serif;
+    color: #334455;
+    font-size: 22px;
+}
+
+                            /* Footer */
+
+/* footer start from here */
+
+footer {
+    position: relative;
+    bottom: -20px;
+    left: -5px;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: url(./2018-bg.jpg) no-repeat;
+    background-size: 100% auto;
+}
+ #footer-h1 {
+    position: relative;
+    font-family: "teko";
+    font-style: italic;
+    line-height: normal;
+    font-size: 90px;
+    color: white;
+    margin-top: 10px; 
+    margin-left: 5em;
+} 
+
+#footer-p {
+    margin-top: 190px;
+    margin-left: 16em;
+    z-index: 5;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: normal;
+    color: white;
+    font-size: 25px; 
+} 
+    
+footer li {
+    padding: 10px;
+    margin-bottom: 2em;
+}
+ #icons {
+    position: relative;
+    left: 40%;
+    bottom: 10px;
+    margin-top: 110px ;
+} 
+.arrowToNav{
+    position: relative;
+    left: 30%;
+    bottom: 220px;
+}
+.arrowToNav:hover{
+    filter: drop-shadow(1px 1px 5px grey);
+}
+footer div li{
+    display: inline;
+}
+
+.fb-icon :hover,.insta-icon :hover,.in-icon :hover,.twitter-icon :hover {
+    height: 5%;
+    width: 5%;
+    margin-left: -14px;
+    margin-top:-15px;
+}
+.footer-copy {
+    font-family: sans-serif;
+    color: #4b4d4f;
+    float: right;
+    margin-top: 15em;
+    margin-right: 2%;
+    font-size: 12px;
+}
+
+
+

@@ -1,0 +1,94 @@
+
+/* The RolePage's Contents */
+
+ #profession {
+    padding-top: 3em; 
+    padding-bottom: 5em;
+    margin-bottom: -2em;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-color: #f5f6fb; 
+} 
+  
+ #pro-h1{
+    margin-left: 33%;
+    font-family: "teko";
+    font-style: italic;
+    line-height: normal;
+    font-size: 70px;
+    color: #334455;
+}
+
+#pro-p {
+    text-align: center;
+    font-family: sans-serif;
+    line-height: normal;
+    color: #334455;
+    font-size: 22px;
+    display: block;
+}
+
+
+#pro-list-images {
+    
+    height: auto;
+    width: 100%;
+}
+.row-1 {
+    margin: 5%;
+    list-style: none;
+}
+.row-2 {
+    margin: 5%;
+    list-style: none;
+}
+.pro1,.pro2,.pro3,.pro4,.pro5,.pro6,.pro7,.pro8 {
+    border-radius: 10px;
+    padding-left: 35px;
+    filter: drop-shadow(0px 15px 10px #334455);
+    height: 340px;    
+}
+#pro-list-images img:hover,.pro1:hover,.pro2:hover,.pro3:hover,.pro4:hover,.pro5:hover,.pro6:hover,.pro7:hover,.pro8:hover {
+    filter: drop-shadow(0px 0px 20px #334455);
+    height: 330px;
+    padding-left: 42px;
+    -webkit-transition:filter 0.3s ease-in-out,height 0.3s ease-in-out,padding-left 0.3s ease-in-out;
+    -moz-transition:filter 0.3s ease-in-out,height 0.3s ease-in-out,padding-left 0.3s ease-in-out;
+    transition:filter 0.3s ease-in-out,height 0.3s ease-in-out,padding-left 0.3s ease-in-out;
+}
+#pro-p2 {
+    margin-top: 90px;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: normal;
+    color: #334455;
+    font-size: 22px;
+} 
+#contact{
+    position: relative;
+    text-align: center;
+}
+.contact {
+    margin: 1em;
+    line-height: 20px;
+    width: 180px;
+    font-size: 17px;
+    padding: 14px;
+    border: none;
+    background: red;
+    color: white;
+}
+.contact:hover {
+    background-color: dodgerblue;
+    -webkit-transition:background 0.3s ease-in-out;
+    -moz-transition:background 0.3s ease-in-out;
+    transition:background-color 0.3s ease-in-out;
+} 
+
+
+
+
+
+
